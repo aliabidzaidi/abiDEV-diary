@@ -9,6 +9,7 @@ module.exports = {
     tagline: siteConfig.tagline,
     description: `A blog template for web developers that's ready to go out of the box. Feel free to modify it to your liking.`,
     author: siteConfig.author.name,
+    copyright: siteConfig.copyright,
     contacts: {
       linkedin: siteConfig.author.contacts.linkedin,
       github: siteConfig.author.contacts.github,
