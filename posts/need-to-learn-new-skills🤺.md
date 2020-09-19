@@ -3,12 +3,13 @@ tags:
   - Makefile
 published: true
 date: 2020-09-19T16:47:48.690Z
-title: Need to learn new skills🤺
+title: Need to learn new skills🤺 🦽
 ---
 World is evolving and I feel incompetent....
 
 So here is a make file to change myself
-``` Makefile
+
+```Makefile
 LIBS = -lpcap 
 MONGOC = $(shell pkg-config --cflags --libs libmongoc-1.0)
 
@@ -20,3 +21,5 @@ all:
 clean:
 	rm abcAPP
 ```
+
+ I think a makefile is not enough, try adding more dummy text that explains....
