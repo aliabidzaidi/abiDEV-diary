@@ -2,7 +2,6 @@ import React from "react"
 import "./sidebar.css"
 
 import abidzaidi from "../../images/cartoon-x.png"
-// import willjw3 from "../../images/willjw3.jpg"
 
 const Bio = ({ author, tagline }) => {
 

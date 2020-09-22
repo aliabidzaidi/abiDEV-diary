@@ -1,7 +1,6 @@
 import React from "react"
 
 import "./header.css"
-// import willjw3 from "../../images/willjw3.jpg"
 import abidzaidi from "../../images/cartoon-x.png"
 
 const MobileBio = (props) => {

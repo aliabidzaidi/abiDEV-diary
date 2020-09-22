@@ -7,7 +7,7 @@ module.exports = {
   copyright: "Powered by Gatsby, cheers to willjw3 for the theme",
   author: {
     name: "Abid Zaidi",
-    bio: "Self-taught web developer and constantly learning",
+    bio: "Full Stack Developer, constantly growing",
     contacts: {
       linkedin: "https://www.linkedin.com/in/abid-zaidi-2775a8179/",
       github: "https://github.com/aliabidzaidi",

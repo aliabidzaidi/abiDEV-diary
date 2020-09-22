@@ -69,3 +69,4 @@ yarn-error.log
 .yarn-integrity
 /public
 .vscode/settings.json
+/posts/sample.md

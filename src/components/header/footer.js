@@ -13,10 +13,7 @@ const Footer = () => {
           <a className="text-info" href="https://www.gatsbyjs.org">
             Gatsby
           </a>{" "}
-          Theme by{" "}
-          <a className="text-info" href="https://willjw3.github.io/">
-            @willjw3
-          </a>
+          Theme by @willjw3
         </i>
       </p>
     </footer>
