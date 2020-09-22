@@ -2,8 +2,8 @@
 
 module.exports = {
   url: "https://developer-diary.netlify.com",
-  title: "abiDEV Diary",
-  tagline: "Contemplating 24x7 to grow",
+  title: "abiDEV diary",
+  tagline: "Full Stack Developer Proficient with Backend and Databases, Creative with Frontend | Angular | Python | .NET | C | NodeJS. ",
   copyright: "Powered by Gatsby, cheers to willjw3 for the theme",
   author: {
     name: "Abid Zaidi",

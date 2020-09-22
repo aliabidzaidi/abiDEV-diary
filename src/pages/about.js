@@ -10,7 +10,7 @@ import TechTag from "../components/tags/TechTag"
 
 const AboutPage = (props) => {
     const labels = props.data.site.siteMetadata.labels
-    const aboutTags = ["react", "nodejs", "html", "css"]
+    const aboutTags = ["gatsby", "react", "nodejs", "html", "css", "angular", "python", "javascript", "mongodb"]
     const tags = {}
     labels.forEach(label => {
         aboutTags.forEach(tag => {
@@ -32,45 +32,61 @@ const AboutPage = (props) => {
                     <SEO title="About" />
                     <div className="mt-3">
                         <h2 className="heading">About</h2>
-                        <p><i>Developer Diary is a Gatsby Starter blog template created with web developers in mind, but really, anyone can use it. It's totally usable right out of the box, but minimalist enough to be easily modifiable to suit your needs.</i></p>
+                        <p><i>Welcome to my DEV diary, this is where I share my Blogs related to programming and my views on technology.</i></p>
                         <br />
                         <h4>Features</h4>
-                        <div>
+                        <div className="mb-4">
                             <span className="text-success d-inline-block" title="blazing">
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Blazing fast, as you'd expect from a Gatsby site</p>
+                            <p className="d-inline-block ml-3 w-75 align-top">Blazing fast Gatsby site powered by GraphQL, as you'd expect from a Gatsby site</p>
+                            <div className="ml-5">
+                                <TechTag tag="gatsby" tech="Gatsby" name={tags["gatsby"]} size={20} color="purple" />
+                            </div> 
                         </div>
                         <div>
                             <span className="text-success d-inline-block" title="tags">
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Tech tags designed for web developers</p>
+                            <p className="d-inline-block ml-3 w-75 align-top">Languages I'm good with</p>
                             <div className="ml-5">
-                                <TechTag tag="react" tech="React" name={tags["react"]} size={20} color="deepskyblue" />
+                                <TechTag tag="angular" tech="Angular" name={tags["angular"]} size={20} color="red" />
                                 <TechTag tag="nodejs" tech="Node.js" name={tags["nodejs"]} size={20} color="lightgreen" />
-                                <TechTag tag="html" tech="HTML" name={tags["html"]} size={20} color="darkorange" />
-                                <TechTag tag="css" tech="CSS" name={tags["css"]} size={20} color="teal" />
+                                <TechTag tag="javascript" tech="Javascript" name={tags["javascript"]} size={20} color="yellow" />
+                                <TechTag tag="typescript" tech="Typescript" name={tags["typescript"]} size={20} color="blue" />
+                                <TechTag tag="python" tech="Python" name={tags["python"]} size={20} color="steelblue" />
+                                <TechTag tag="csharp" tech="C#" name={tags["csharp"]} size={20} color="white" />
+                                <TechTag tag="clang" tech="C" name={tags["clang"]} size={20} color="white" />
                             </div>  
                         </div>
-                        <div className="mt-4">
+                        <div className="mt-4 mb-4">
                             <span className="text-success d-inline-block" title="prism">
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Includes Prism for code block styling in markdown files</p>
+                            <p className="d-inline-block ml-3 w-75 align-top">Databases that I Like</p>
+                            <div className="ml-5">
+                                <TechTag tag="X" tech="Oracle" name={tags["X"]} size={20} color="white" />
+                                <TechTag tag="X" tech="SQL Server" name={tags["X"]} size={20} color="white" />
+                                <TechTag tag="X" tech="MySQL" name={tags["X"]} size={20} color="white" />
+                                <TechTag tag="mongodb" tech="MongoDB" name={tags["mongodb"]} size={20} color="green" />
+                                <TechTag tag="X" tech="Redis" name={tags["X"]} size={20} color="white" />
+                            </div>  
                         </div>
                         <div>
                             <span className="text-success d-inline-block" title="icons">
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
-                            <p className="d-inline-block ml-3 w-75 align-top">Developer-relevant social-media icon links including GitHub, Stack Overflow and freeCodeCamp</p>
+                            <p className="d-inline-block ml-3 w-75 align-top">Interests in Mobile App Development</p>
+                            <div className="ml-5">
+                                <TechTag tag="X" tech="Flutter" name={tags["X"]} size={20} color="white" />
+                             </div>  
                         </div>
-                        <div>
+                        {/* <div>
                             <span className="text-success d-inline-block" title="mobile">
                                 <FaCheckCircle size={26} style={{ color: "success" }} />
                             </span>
                             <p className="d-inline-block ml-3 w-75 align-top">Mobile responsive, of course</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
