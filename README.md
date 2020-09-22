@@ -1,11 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://www.github.com/aliabidzaidi">
+    <img alt="Gatsby" src="https://raw.githubusercontent.com/aliabidzaidi/aliabidzaidi.github.io/master/assets/cartoon-x.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Developer Diary - A Gatsby Starter
+  abiDEV diary - Programming Blog
 </h1>
 
 ![devDiary](https://dl.dropboxusercontent.com/s/605o40f9b92e9m8/devdiary.jpg?dl=0)
