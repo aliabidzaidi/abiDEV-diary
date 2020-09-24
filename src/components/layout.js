@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
                 stackoverflow
                 freecodecamp
                 twitter
+                medium
               }
             }
           }

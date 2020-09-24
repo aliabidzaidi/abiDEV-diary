@@ -10,7 +10,9 @@ import TechTag from "../components/tags/TechTag"
 
 const AboutPage = (props) => {
     const labels = props.data.site.siteMetadata.labels
-    const aboutTags = ["gatsby", "react", "nodejs", "html", "css", "angular", "python", "javascript", "mongodb"]
+    const aboutTags = ["gatsby", "react", "nodejs", "html", "css", 
+                        "angular", "python", "javascript", "mongodb",
+                        "clang", "csharp", "typescript"]
     const tags = {}
     labels.forEach(label => {
         aboutTags.forEach(tag => {
@@ -53,10 +55,10 @@ const AboutPage = (props) => {
                                 <TechTag tag="angular" tech="Angular" name={tags["angular"]} size={20} color="red" />
                                 <TechTag tag="nodejs" tech="Node.js" name={tags["nodejs"]} size={20} color="lightgreen" />
                                 <TechTag tag="javascript" tech="Javascript" name={tags["javascript"]} size={20} color="yellow" />
-                                <TechTag tag="typescript" tech="Typescript" name={tags["typescript"]} size={20} color="blue" />
+                                <TechTag tag="typescript" tech="Typescript" name={tags["typescript"]} size={20} color="#007acc" />
                                 <TechTag tag="python" tech="Python" name={tags["python"]} size={20} color="steelblue" />
-                                <TechTag tag="csharp" tech="C#" name={tags["csharp"]} size={20} color="white" />
-                                <TechTag tag="clang" tech="C" name={tags["clang"]} size={20} color="white" />
+                                <TechTag tag="csharp" tech="C sharp" name={tags["csharp"]} size={20} color="#ab47bc" />
+                                <TechTag tag="clang" tech="C language" name={tags["clang"]} size={20} color="#a9b9cb" />
                             </div>  
                         </div>
                         <div className="mt-4 mb-4">

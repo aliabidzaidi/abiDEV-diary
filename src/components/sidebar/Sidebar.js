@@ -23,6 +23,7 @@ const Sidebar = () => {
                                 stackoverflow
                                 freecodecamp
                                 twitter
+                                medium
                             }
                             labels {
                                 tag

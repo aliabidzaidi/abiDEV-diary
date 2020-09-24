@@ -1,13 +1,15 @@
 ---
-title: 'This is my first blog on this dev diary'
-tags: ["javascript", "react", "nodejs", "git", "css", "python", "ruby", "java", "angular", "html", "php", "mongodb", "vscode", "graphql", "gatsby"]
+title: "This is my first blog on this dev diary | hello world in C"
+tags: ["clang"]
 published: true
-date: '2020-09-22'
+date: "2020-09-22"
 ---
 
-This is my first blog on this platform, I'll keep adding more stuff as time passes by, below is a self explanatory code just for testing 🙂
+This is my first blog on this platform, I'll keep adding more stuff as time passes by, 
 
-``` C
+below is a self explanatory code written in C just for testing 🙂
+
+```C
 #include <stdio.h>
 
 int main(void)
@@ -19,6 +21,7 @@ int main(void)
 
 }
 ```
+
 <br>
 
 [Do visit my github account](https://www.github.com/aliabidzaidi)<br>

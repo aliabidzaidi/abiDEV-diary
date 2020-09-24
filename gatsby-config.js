@@ -16,6 +16,7 @@ module.exports = {
       stackoverflow: siteConfig.author.contacts.stackoverflow,
       freecodecamp: siteConfig.author.contacts.freecodecamp,
       twitter: siteConfig.author.contacts.twitter,
+      medium: siteConfig.author.contacts.medium,
     },
     labels: siteConfig.labels,
   },
