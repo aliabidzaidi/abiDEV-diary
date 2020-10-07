@@ -88,6 +88,6 @@ Our ***index.html*** file will call JS files and there is a weird way you add st
 
 <https://ajeebchat.herokuapp.com/>
 
-![Screenshot of ajeeb chat room](assets/ajeeb-chat.png "Ajeeb chat room home page screenshot")
+![Screenshot of ajeeb chat room](https://raw.githubusercontent.com/aliabidzaidi/abiDEV-diary/master/static/assets/ajeeb-chat.png "Ajeeb chat room home page screenshot")
 
 **You can find this project on github : <https://github.com/aliabidzaidi/ajeeb-chat-room>**
