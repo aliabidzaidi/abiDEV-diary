@@ -4,7 +4,7 @@ tags:
   - javascript
   - socketio
   - flask
-published: false
+published: true
 date: 2020-10-06T11:40:29.332Z
 title: Python Flask Chat room using Socket.io
 ---
