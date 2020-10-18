@@ -1,3 +1,15 @@
+
+:root{
+  --background-color: #f8f8f8;
+  --primary-color: #1E1E1E;
+}
+
+[data-theme="dark"]{
+  --background-color: #1E1E1E;
+  --primary-color: #f8f8f8;
+}
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -199,7 +211,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  /* color: hsla(0, 0%, 0%, 0.8); */
+  background-color: var(--background-color);
+  color: var(--primary-color);
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;

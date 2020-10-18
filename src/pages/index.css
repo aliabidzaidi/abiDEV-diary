@@ -22,3 +22,7 @@ p, .title {
     justify-content: space-around;
   }
 }
+
+.htest{
+  color: var(--primary-color);
+}

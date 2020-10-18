@@ -55,6 +55,7 @@ const Sidebar = () => {
                         <Bio author={data.site.siteMetadata.author} tagline={data.site.siteMetadata.tagline} />
                         <SocialLinks contacts={data.site.siteMetadata.contacts} />
                         <div className="page-links">
+                            <p className="ptest">Some dummy text, thats all</p>
                             <Link to="/"><span className="text-dark d-block py-1">Blog Home</span></Link>
                             <Link to="/about"><span className="text-dark d-block py-1">About</span></Link>
                             <Link to="/archive"><span className="text-dark d-block py-1">Archive</span></Link>

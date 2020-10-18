@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Sidebar from "../components/sidebar/Sidebar"
 import TechTag from "../components/tags/TechTag"
 
+
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   const labels = data.site.siteMetadata.labels
@@ -28,6 +29,18 @@ const IndexPage = ({ data }) => {
     return techTags
   }
 
+    
+  // let darkTheme = false
+  // function changeTheme() {
+  //   darkTheme = !darkTheme
+  //   if (darkTheme) {
+  //     console.log("Dark Mode")
+  //     document.documentElement.setAttribute("data-theme", "dark")
+  //   } else {
+  //     console.log("Light Mode")
+  //     document.documentElement.removeAttribute("data-theme", "dark")
+  //   }
+  // }
 
   return (
     <Layout>
@@ -37,6 +50,7 @@ const IndexPage = ({ data }) => {
           <Sidebar />
         </div>
         <div className="post-list-main">
+          <h1 className="htest">Just a Test :)</h1>
           {posts.map((post) => {
             const tags = post.node.frontmatter.tags
             return (
@@ -74,6 +88,8 @@ const IndexPage = ({ data }) => {
     </Layout>
   )
 }
+
+
 
 export const pageQuery = graphql`
          query IndexQuery {

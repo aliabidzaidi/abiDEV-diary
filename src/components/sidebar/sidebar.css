@@ -29,3 +29,6 @@ small, h3, p {
     font-size: 2vw;
 }
 
+.ptest{
+    color: var(--primary-color);
+}
