@@ -1,14 +1,14 @@
-
-:root{
+:root {
   --background-color: #f8f8f8;
-  --primary-color: #1E1E1E;
+  --background-2-color: #fafafa;
+  --primary-color: #1e1e1e;
 }
 
-[data-theme="dark"]{
-  --background-color: #1E1E1E;
+[data-theme="dark"] {
+  --background-color: #1e1e1e;
+  --background-2-color: #141414;
   --primary-color: #f8f8f8;
 }
-
 
 html {
   font-family: sans-serif;
@@ -633,4 +633,9 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.text-c {
+  color: var(--primary-color);
+  text-decoration-color: var(--primary-color);
 }

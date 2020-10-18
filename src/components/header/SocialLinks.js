@@ -1,14 +1,8 @@
 import React from "react"
 import {
   FaLinkedin,
-  FaGithubSquare,FaGithub,FaGithubAlt,
-  FaStackOverflow,
-  FaFreeCodeCamp,
-  FaTwitterSquare,
+  FaGithubSquare,
   FaMedium,
-  FaMediumM,
-  FaReceipt,
-  FaReact,
 } from "react-icons/fa"
 
 const SocialLinks = ({ contacts }) => {

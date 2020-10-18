@@ -52,44 +52,43 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
 
 
   return (
-    <header
-      className="head-main"
-      style={{
-        background: `black`,
-      }}
-    >
-      <div
-        className="head-elements"
-        style={{
-          margin: `0`,
-          padding: `.75rem`,
-        }}
-      >
-        <h1 className="head-logo ml-4" style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-        <div style={{display: "flex"}}>
-        <SocialLinks contacts={contacts} />
-        <div class="darkModeSwitch" onClick={changeTheme} >
-          <FaSun id="faSun" size={25} style={{ color: "yellow", 
-          display:darkTheme?"block":"none", opacity: darkTheme?"1":"0" }}></FaSun>
-          <FaMoon id="faMoon" size={25} style={{ color: "white", 
-          display: darkTheme?"none":"block", opacity: darkTheme?"0":"1" }} ></FaMoon>
-        </div>
+    <header 
+    className="head-main"
+    style={{
+      background: `black`,
+    }}>
+        <div
+          className="head-elements"
+          style={{
+            margin: `0`,
+            padding: `.75rem`,
+          }}
+        >
+          <h1 className="head-logo ml-4" style={{ margin: 0 }}>
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              {siteTitle}
+            </Link>
+          </h1>
+          <div style={{display: "flex"}}>
+          <SocialLinks contacts={contacts} />
+          <div class="darkModeSwitch" onClick={changeTheme} >
+            <FaSun id="faSun" size={25} style={{ color: "yellow", 
+            display:darkTheme?"block":"none", opacity: darkTheme?"1":"0" }}></FaSun>
+            <FaMoon id="faMoon" size={25} style={{ color: "white", 
+            display: darkTheme?"none":"block", opacity: darkTheme?"0":"1" }} ></FaMoon>
+          </div>
+
+          </div>
 
         </div>
-
-      </div>
-      <MobileSocialLinks contacts={contacts} />
-      <MobilePageLinks />
+        <MobileSocialLinks contacts={contacts} />
+        <MobilePageLinks />
       <MobileBio author={author} />
     </header>
   )

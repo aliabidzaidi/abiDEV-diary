@@ -44,7 +44,7 @@ const PostList = (props) => {
                             <div key={post.node.id} className="container mt-5">
                                 <Link
                                     to={post.node.fields.slug}
-                                    className="text-dark"
+                                    className="text-c"
                                 >
                                     <h2 className="title">{post.node.frontmatter.title}</h2>
                                 </Link>
@@ -66,12 +66,12 @@ const PostList = (props) => {
                     <div className="text-center mt-4">
                         {!isFirst && (
                             <Link to={prevPage} rel="prev" style={{ textDecoration: `none` }}>
-                                <span className="text-dark">← Previous Page</span>
+                                <span className="text-c">← Previous Page</span>
                             </Link>
                         )}
                         {!isLast && (
                             <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
-                                <span className="text-dark ml-5">Next Page →</span>
+                                <span className="text-c ml-5">Next Page →</span>
                             </Link>
                         )}
                     </div>
