@@ -11,11 +11,12 @@ import MobileBio from "./MobileBio"
 import "./header.css"
 
 const Header = ({ siteTitle, tagline, author, contacts }) => {
-  console.log(localStorage.getItem("darkTheme"))
+  const windowGlobal = typeof window !== 'undefined' && window
+  console.log(windowGlobal.localStorage.getItem("darkTheme"))
+
 
   let darkTheme = false
-  if (localStorage.getItem("darkTheme") == "true") {
-    console.log('asdfasdasdf')
+  if (windowGlobal.localStorage.getItem("darkTheme") == "true") {
     darkTheme=true
     switchTheme()
   }
@@ -23,7 +24,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
   
   function changeTheme() {
     darkTheme = !darkTheme
-    localStorage.setItem('darkTheme', darkTheme);
+    windowGlobal.localStorage.setItem('darkTheme', darkTheme);
 
     switchTheme()
 
@@ -77,7 +78,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
           </h1>
           <div style={{display: "flex"}}>
           <SocialLinks contacts={contacts} />
-          <div class="darkModeSwitch" onClick={changeTheme} >
+          <div className="darkModeSwitch" onClick={changeTheme} >
             <FaSun id="faSun" size={25} style={{ color: "yellow", 
             display:darkTheme?"block":"none", opacity: darkTheme?"1":"0" }}></FaSun>
             <FaMoon id="faMoon" size={25} style={{ color: "white", 
