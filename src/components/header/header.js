@@ -12,7 +12,8 @@ import "./header.css"
 
 const Header = ({ siteTitle, tagline, author, contacts }) => {
   const windowGlobal = typeof window !== 'undefined' && window
-  console.log(windowGlobal.localStorage.getItem("darkTheme"))
+  if (typeof window !== 'undefined')
+    console.log(localStorage.getItem("darkTheme"))
 
 
   let darkTheme = false
