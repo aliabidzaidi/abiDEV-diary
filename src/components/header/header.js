@@ -16,7 +16,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
 
 
   let darkTheme = false
-  if (windowGlobal.localStorage.getItem("darkTheme") == "true") {
+  if (typeof window !== 'undefined' && localStorage.getItem("darkTheme") == "true") {
     darkTheme=true
     switchTheme()
   }
@@ -24,7 +24,8 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
   
   function changeTheme() {
     darkTheme = !darkTheme
-    windowGlobal.localStorage.setItem('darkTheme', darkTheme);
+    if (typeof window !== 'undefined')
+      localStorage.setItem('darkTheme', darkTheme);
 
     switchTheme()
 
