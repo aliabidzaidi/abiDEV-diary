@@ -11,7 +11,7 @@ import MobileBio from "./MobileBio"
 import "./header.css"
 
 const Header = ({ siteTitle, tagline, author, contacts }) => {
-  const windowGlobal = typeof window !== 'undefined' && window
+  
   if (typeof window !== 'undefined')
     console.log(localStorage.getItem("darkTheme"))
 
