@@ -1,8 +1,8 @@
 ---
 tags:
-  - Redis
-  - C
-  - C++
+  - clang
+  - cplusplus
+  - redis
 published: true
 date: 2021-02-19T20:39:47.528Z
 title: Redis basics using hiredis C
