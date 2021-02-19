@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'LogoFont';
+  src: url('../../../static/assets/danielbd.ttf');
+}
+
 .head-main {
   width: 100%;
   z-index: 1;
@@ -38,8 +43,9 @@
 }
 
 .head-logo {
-  font-family: "Raleway";
+  font-family: "LogoFont", "Raleway";
   font-size: 1.75rem;
+  padding-top: 5px;
 }
 
 small {
