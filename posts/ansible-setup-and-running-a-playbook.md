@@ -11,7 +11,7 @@ Ansible is an automation tool, I've used it in a case where you have to run simi
 
 In this example I'll install an ftp server, nginx and also allow all connection on firewall. 
 
-```
+```shell
 sudo apt update
 sudo apt install ansible
 ```
@@ -26,7 +26,7 @@ In my case:
 * 10.2.4.50 (Client)
 * 10.2.4.51 (Client)
 
-```
+```shell
 ssh-keygen
 # Fill the options, just remember what name you save your key with 
 # Enter file in which to save the key: /root/.ssh/ansible_host
@@ -51,7 +51,7 @@ cp /home/username/.ssh/authorized_keys /root/.ssh/
 
 Once ssh keys are done, add IPs in hosts and then edit your .cfg as follows
 
-```
+```shell
 cd /etc/ansible/
 
 vim hosts
@@ -80,7 +80,7 @@ private_key_file = /root/.ssh/ansible_host
 
 To check ansible is working run ping
 
-```
+```shell
 ansible all -m ping
 
 
@@ -106,7 +106,7 @@ server3 | SUCCESS => {
 
 Create a yaml file, this is a playbook which we'll run via **ansible-playbook** command. Ansible playbook contains multiple Plays which consist of metadata and a sequence of task and handler definitions, and roles.
 
-```
+```shell
 # Create a yaml 
 vim ftp_http_installer.yml
 
@@ -159,7 +159,7 @@ vim ftp_http_installer.yml
 
 
 
-```
+```shell
 # Check syntax of yaml with ansible-playbook 
 ansible-playbook ftp_http_installer.yml --syntax-check
 
