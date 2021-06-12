@@ -16,6 +16,9 @@ sudo apt update
 sudo apt install ansible
 ```
 
+
+<br />
+
 ## Setup SSH Keys on Host and Clients
 
 To start running commands on multiple host machines we first have to setup ssh Keys in host machine and clients.
@@ -46,6 +49,7 @@ cp /home/username/.ssh/authorized_keys /root/.ssh/
 ```
 
 
+<br />
 
 ## Configure Ansible 
 
@@ -75,6 +79,8 @@ private_key_file = /root/.ssh/ansible_host
 ```
 
 
+<br />
+
 
 ## Running Ansible
 
@@ -100,6 +106,8 @@ server3 | SUCCESS => {
 
 ```
 
+
+<br />
 
 
 ## Create an Ansible playbook
@@ -154,6 +162,8 @@ vim ftp_http_installer.yml
 ```
 
 
+<br />
+
 
 ## Running the Playbook
 
@@ -176,6 +186,8 @@ ansible-playbook ftp_http_server.yml -K
 
 
 
+
+<br />
 
 
 Final Output will look something like this
@@ -229,7 +241,7 @@ server2                    : ok=8    changed=4    unreachable=0    failed=0    s
 
 
 
-## Testing if FTP Server & Http Server
+## Testing our FTP Server & Http Server
 
 ```
 curl 10.2.4.50
